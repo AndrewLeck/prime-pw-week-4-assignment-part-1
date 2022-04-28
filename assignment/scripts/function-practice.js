@@ -55,6 +55,16 @@ function isPositive( number ) {
   }
     return;
 }
+
+function isPositive( number){
+  if ( number> 0){
+    return true;
+  }
+    else{
+      return false;
+    }
+}
+console.log('is -6 a positive number?', isPositive(-2) );
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
@@ -67,6 +77,17 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 function getLast( array ) {
 
 }
+
+let array = ['Max', 'Tobi', 'Joe', 'Drew', 'Kate'];
+function getLast( array ) {
+   if( array.length = 5 ){
+     return array[4]
+   }
+   if(array.length < 0){
+     return undefined;
+   }
+}
+console.log( getLast( array) );
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
