@@ -32,14 +32,19 @@ function addNumbers( firstNumber ) {
 }
 
 function addNumbers( firstNumber, secondNumber){
-  console.log ( 'addNumbers:', firstNumber, secondNumber);
    return firstNumber + secondNumber;
 }
-console.log ( ' 4 + 4:', addNumbers(4 , 4));
+console.log ('4 + 4:', addNumbers(4 , 4));
+
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
 
 }
+
+function multiplyThree( num1, num2, num3){
+  return num1 * num2 * num3;
+}
+console.log(multiplyThree(5, 5, 5));
 
 
 // 5. Function that will return true if a number is positive, 
