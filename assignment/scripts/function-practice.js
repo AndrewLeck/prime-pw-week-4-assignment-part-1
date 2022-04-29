@@ -64,12 +64,12 @@ function isPositive( number){
       return false;
     }
 }
-console.log('is -6 a positive number?', isPositive(-2) );
+console.log('is -6 a positive number or greater than 0?', isPositive(-2) );
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( 'is 3 a positive number or greater than 0?', isPositive(3) );
+console.log( 'is 0 a positive number or greater than 0?', isPositive(0) );
+console.log( 'is -3 a positive number or greater than 0?', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the 
@@ -87,7 +87,7 @@ function getLast( array ) {
      return undefined;
    }
 }
-console.log( getLast( array) );
+console.log( getLast(array) );
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -96,6 +96,15 @@ function find( value, array ){
   
 }
 
+let value = array.length;
+function find(value, array){
+  for (let i=0; i<array.length; i++){
+    if(value === array.length && value === 'Tom');
+    return true;
+  }
+    
+}
+console.log('testing', find(value, array));
 // ----------------------
 // Stretch Goals
 // ----------------------
