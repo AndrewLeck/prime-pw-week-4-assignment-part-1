@@ -78,7 +78,7 @@ console.log( 'is -3 a positive number or greater than 0?', isPositive(-3) );
 //function getLast( array ) {
 
 //}
-let array = ['Max', 'Tobi', 'Joe', 'Drew', 'Kate'];
+let names = ['Max', 'Tobi', 'Joe', 'Drew', 'Kate'];
 function getLast( array ) {
    if(array.length-1 === 4){
      return array[4];
@@ -87,7 +87,7 @@ function getLast( array ) {
      return undefined;
    }
 }
-console.log( getLast(array) );
+console.log( getLast(names) );
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -95,21 +95,20 @@ console.log( getLast(array) );
 //function find( value, array ){
   
 //}
-
+let nums =[ 1, 2, 3, 4]
 function find(value, array){
-  for(i=0; i<array.length; i++);
-  if(array[ i ] === array.at[0,1,2,3,4]){
-    return true;
+  for(let i=0; i<array.length; i++){
+    if(array[i] === value){
+      return true;
+    }   
   }
-  else{
-    return false;
-  }
+  return false;
 }
-console.log('testing', find('Kate', array));
-console.log('testing', find('Kate', array));
-console.log('testing', find('Jon', array));
-console.log('testing', find('Max', array));
-// ----------------------
+console.log('testing', find( 3, nums));
+console.log('testing', find( 7, nums));
+console.log('testing', find( 1, nums));
+console.log('testing', find( 6, nums));
+// ---------------------- 
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
