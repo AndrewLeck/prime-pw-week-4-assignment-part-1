@@ -98,10 +98,12 @@ console.log( getLast(array) );
 
 function find(value, array){
   for(i=0; i<array.length; i++);
-  if(value === array[i]){
+  if(array[ i ] > -1){
     return true;
   }
-  return false;
+  else{
+    return false;
+  }
 }
 console.log('testing', find('Kate', array));
 console.log('testing', find('Kate', array));
