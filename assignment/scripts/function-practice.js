@@ -98,7 +98,7 @@ console.log( getLast(array) );
 
 function find(value, array){
   for(i=0; i<array.length; i++);
-  if(array[ i ] > -1){
+  if(array[ i ] === array.at[0,1,2,3,4]){
     return true;
   }
   else{
